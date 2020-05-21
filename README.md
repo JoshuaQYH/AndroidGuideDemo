@@ -41,4 +41,4 @@
 
 成果如下：
 
-![](img\pic1.jpg)
+![](img/pic1.jpg)
