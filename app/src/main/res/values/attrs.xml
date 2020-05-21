@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleLayout">
+        <attr name="custom_title" format="reference"/>
+        <attr name="title_textSize" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="RatingStarLayout" />
+    <declare-styleable name="MyVideoPlayer">
+        <attr name="video_url" format="string"/>
+        <attr name="video_width" format="dimension"/>
+        <attr name="video_height" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/indexText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/StandardMargin"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:text="@string/index_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.androidguide.RatingStarLayout
+                android:id="@+id/ratingStar1"
+                android:layout_width="@dimen/RatingStarLayoutWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:layout_marginEnd="@dimen/StandardMargin"
+                android:layout_marginRight="@dimen/StandardMargin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/devGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:text="@string/developer_guide"
+                android:textSize="@dimen/Header1Size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/indexText" />
+
+            <TextView
+                android:id="@+id/intro_text"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/StandardMargin"
+                android:layout_marginRight="@dimen/StandardMargin"
+                android:lineSpacingExtra="8sp"
+                android:padding="@dimen/StandardPadding"
+                android:text="@string/intro_text"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@+id/videoView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/devGuide" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="@dimen/VideoWidth"
+                android:layout_height="@dimen/VideoHeight"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:layout_marginEnd="@dimen/StandardMargin"
+                android:layout_marginRight="@dimen/StandardMargin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/devGuide" />
+
+            <com.example.androidguide.TitleLayout
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/StandardMargin"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:padding="@dimen/StandardPadding"
+                app:custom_title="@string/title1"
+                app:title_textSize="@dimen/Header2Size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro_text">
+
+            </com.example.androidguide.TitleLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="@dimen/StandardMargin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+            <com.example.androidguide.TitleLayout
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/StandardMargin"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:padding="@dimen/StandardPadding"
+                app:custom_title="@string/title2"
+                app:title_textSize="@dimen/Header2Size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RecyclerView1">
+
+            </com.example.androidguide.TitleLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="@dimen/StandardMargin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+            <!-- 弃用
+            <GridView
+                android:id="@+id/GridView1"
+                android:numColumns="3"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/StandardMargin"
+                android:layout_marginLeft="@dimen/StandardMargin"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:horizontalSpacing="@dimen/StandardMargin"
+                android:verticalSpacing="@dimen/StandardMargin"
+                android:padding="@dimen/StandardMargin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title2" />
+             -->
+
+            <View
+                style="@style/Divider"
+                android:id="@+id/bottom_divider"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RecyclerView2"
+                android:layout_marginTop="@dimen/StandardMargin"/>
+
+            <TextView
+                android:id="@+id/bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:gravity="center"
+                android:text="@string/bottom_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/bottom_divider"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_divider" />
+
+            <com.example.androidguide.RatingStarLayout
+                android:id="@+id/ratingStar2"
+                android:layout_width="@dimen/RatingStarLayoutWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:layout_marginBottom="@dimen/StandardMargin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/bottom_text"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_text"
+                app:layout_goneMarginTop="@dimen/StandardMargin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

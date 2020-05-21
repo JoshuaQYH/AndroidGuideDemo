@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidGuide</string>
+    <string name="index_text"><![CDATA[Android Developers > Docs > Guides]]></string>
+    <string name="developer_guide">Developer Guide</string>
+    <string name="intro_text">www.google.com</string>
+    <string name="starimage">starImage</string>
+    <string name="videobutton">videoButton</string>
+    <string name="title1">Essential Documentation</string>
+    <string name="title2">Online training</string>
+    <string name="header">header</string>
+    <string name="bottom_text">Was this page helpful?</string>
+    <string name="video_url">null</string>
+</resources>

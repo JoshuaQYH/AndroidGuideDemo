@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="RatingStarLayoutWidth">160dp</dimen>
+    <dimen name="StandardMargin">16dp</dimen>
+    <dimen name="StandardPadding">4dp</dimen>
+    <dimen name="Header1Size">24sp</dimen>
+    <dimen name="Header2Size">18sp</dimen>
+    <dimen name="Header3Size">16sp</dimen>
+    <dimen name="ImageHeightOfCard">100dp</dimen>
+    <dimen name="SummaryHeightOfCard">80dp</dimen>
+    <dimen name="VideoWidth">280dp</dimen>
+    <dimen name="VideoHeight">160dp</dimen>
+</resources>
